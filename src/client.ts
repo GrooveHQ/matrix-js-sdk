@@ -4221,7 +4221,7 @@ export class MatrixClient extends EventEmitter {
             opts = { presence: opts }; // legacy
         }
 
-        const validStates = ["offline", "online", "unavailable"];
+        const validStates = ["offline", "online", "unavailable", "org.matrix.msc3026.busy"];
         if (validStates.indexOf(opts.presence) === -1) {
             throw new Error("Bad presence value: " + opts.presence);
         }

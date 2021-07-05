@@ -110,5 +110,8 @@
     "coverageReporters": [
       "text"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://package-cluster.production.groovehq.com/"
   }
 }
